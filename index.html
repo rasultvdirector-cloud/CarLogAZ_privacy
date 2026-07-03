@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CarLog AZ Documents</title>
+  <style>
+    :root {
+      --bg: #f5f6f3;
+      --surface: #ffffff;
+      --text: #1f2924;
+      --muted: #5e6b64;
+      --brand: #0b5f46;
+      --brand-soft: #e6f1ed;
+      --accent: #c4973f;
+      --border: #d9e2dd;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f8fbf9 0%, var(--bg) 100%);
+      color: var(--text);
+    }
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 36px 20px 64px;
+    }
+    .hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 30px 24px;
+      box-shadow: 0 16px 42px rgba(11, 95, 70, 0.08);
+      margin-bottom: 18px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--brand-soft);
+      color: var(--brand);
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 34px;
+      line-height: 1.15;
+      color: var(--brand);
+    }
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 22px 18px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 12px 32px rgba(11, 95, 70, 0.06);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 38px rgba(11, 95, 70, 0.10);
+    }
+    .card .eyebrow {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .card h2 {
+      margin: 0 0 8px;
+      color: var(--brand);
+      font-size: 24px;
+    }
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="badge">CarLog AZ</div>
+      <h1>Sənədlər</h1>
+      <p class="meta">Bu səhifə CarLog AZ üçün public Play Console sənədlərini bir yerdə göstərir. GitHub Pages üzərindən paylaşılmaq üçün hazırlanıb.</p>
+      <p class="footer">Founder: Rasul Alekberov</p>
+    </div>
+
+    <div class="grid">
+      <a class="card" href="./privacy-policy.html">
+        <div class="eyebrow">Policy</div>
+        <h2>Privacy Policy</h2>
+        <p>Tətbiqin hansı məlumatları lokal saxladığı, icazələrdən necə istifadə etdiyi və Firebase qeydləri.</p>
+      </a>
+
+      <a class="card" href="./legacy.html">
+        <div class="eyebrow">Notes</div>
+        <h2>Legacy</h2>
+        <p>Keçid, uyğunluq və lokal məlumat davranışları barədə qısa izah.</p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
